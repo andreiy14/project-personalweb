@@ -1,0 +1,20 @@
+.navbar{
+    height : 7vh;
+}
+
+.container-form-blog{
+    height  : 93vh;
+}
+.container-form{
+    width: 450px;
+}
+.btn-orange-nav{
+    border: 1px solid black;
+}
+.btn-orange{
+    background-color: orangered;
+    color: white;
+}
+.text-orange{
+    color: orangered !important;
+}

@@ -1,0 +1,102 @@
+<html>
+    <head>
+    <title>Nav dan Layouting</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+
+
+<body>
+    <nav>
+    <div class="left">
+        <img src="public/assets/logo.png" >
+        <ul>
+            <li>
+                <a href="/">HOME</a>
+            </li>
+            <li>
+                <a href="blog">  BLOG</a>
+            </li>
+    </ul>
+    </div>
+    <div class="right-nav" > <a href="form" >  Contact Me</a></div>
+</nav>
+
+
+
+<div class="container" style="background-color: white"   >
+    <div class="section">
+        <div class="left">
+            <div style="border:none;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
+            width: 350px;
+            border-radius: 15px;
+            margin: auto;
+                                                                                                                 
+            padding: 18px;
+           
+    "   >
+    <img src="public/assets/my-image.jpg"  style="width:100%; border-radius: 15px; " alt="">
+    <h2>Andreiy Shevchenko</h2>
+    <p style="color: gray;"> I want to become Fullstack Developer</p>
+    <span><strong>Skill</strong></span>
+    <p style="color: grey;">I have skill to use library like React js and  platform node js</p>
+    
+    </ul>
+    <table border="1" style="border-collapse:collapse;
+                            width: 100%;
+    ">
+        <tr>
+            <th>Experience</th>
+            
+            <th>Year</th>
+        </tr>
+         {{#each dataBlogs}}
+        <tr>
+           
+            <td>{{this.experience}}</td>
+            <td  style="text-align: center;">{{this.year}}</td>
+            
+        </tr>
+        {{/each}}
+    </table>
+</div>
+        </div>
+
+        <div class="right" >
+            <h1>What i do</h1>
+            <p>I develop web and app use react and node js . I have skill to use API and make sure the app always update . you can see my project on my github</p>
+
+            <div class="skill-container">
+
+                <div class="satu">
+                    <img src="public/assets/js.png">
+                    <h4>Frontend Javascript</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, temporibus.</p>
+                </div>
+                <div class="dua">
+                    <img src="public/assets/git.png">
+                    <h4>Version Control</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, temporibus.</p>
+                </div>
+                <div class="tiga">
+                    <img src="public/assets/deploy.png">
+                    <h4>Automated Deployment</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, temporibus.</p>
+                </div>
+
+            </div>
+            <h1>Found Me on</h1>
+           
+                <a  href="https://www.instagram.com/andreiyshevchenko/"  target="_blank"><img style="width: 50px; " src="public/assets/ig.png" alt=""></a>
+                <a  href="https://web.facebook.com/andreiy.roring/" target="_blank"><img style="width: 50px; " src="public/assets/db.png" alt=""></a>
+            
+        </div>
+       
+    </div>
+</div>
+
+   
+   
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="public/css/styles.css">
+        <script src="script.js"></script>
+    </head>
+
+
+    <body  style="overflow: hidden;">
+        <nav>
+            <div class="left">
+                <img src="public/assets/logo.png" >
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="add-blog"> Blog</a>
+                    </li>
+            </ul>
+            </div>
+            <div class="right"> <a href="form.html" > Contact Me</a></div>
+        </nav>
+
+        <div style="background-color: white; top: 0; padding-top : 50px; height: 100%; ">
+        <form id="form" action="" style=" background-color:white;
+         box-shadow: 0px 0px 20px rgb(0 0 0 / 25%);
+                                width: 400px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                border-radius: 5px;
+                                border: none;
+                                padding: 12px 14px;
+                               
+        ">
+        <div style="margin-bottom: 20px;  margin-top: 8px;">
+            <label for="input-name" style="font-size: 22px; font-weight: bold;" >Name</label>
+            <input id="input-name" type="text" style="padding: 15px;
+                                                    width: 100%;
+                                                    border: 1px solid rgb(161, 159, 159);
+                                                    border-radius: 12px;
+                                                    margin-top: 12px;
+                                                                    ">
+        </div>
+        <div  style="margin-bottom: 20px; ">
+            <label for="input-email"style="font-size: 22px; font-weight: bold; ">Email</label>
+            <input type="email" id="input-email" style="padding: 15px;
+                                                        width: 100%;
+                                                        border: 1px solid rgb(161, 159, 159);
+                                                        border-radius: 12px;
+                                                        margin-top: 10px;
+                                                                        ">
+        </div>      
+        <div  style="margin-bottom: 20px;  ">
+            <label for="input-number"style="font-size: 22px; font-weight: bold;">Number</label>
+            <input type="number" id="input-number"   style="padding: 15px;
+                                                            width: 100%;
+                                                            border: 1px solid rgb(161, 159, 159);
+                                                            border-radius: 12px;
+                                                            margin-top: 12px;
+                                                                            ">
+        </div>
+        
+        <div style="margin-bottom: 20px;  ">
+            <label style="font-size: 22px; font-weight: bold;" for="input-divisi">Subject</label> <br>
+            <select  id="subject" style="padding: 15px;  
+                            border: 1px solid rgb(161, 159, 159);
+                            border-radius: 12px; 
+                            margin-top: 10px; 
+                            width:100%; color: gray; 
+                            font-weight: 700; font-size: 15px;"  id="input-divisi">
+                <option  value="Let's Talk">Let's Talk</option>
+                <option  value="Let's Collaboration">Let's Collaboration</option>
+                <option  value="I am Hiring">I am Hiring</option>
+              
+            </select>
+        </div>
+        <div  style="margin-bottom: 20px;  ">
+            <label for="input-message"style="font-size: 22px; font-weight: bold;" for="input-divisi">Your Message</label>
+            <br>
+            <textarea id="input-message" cols="20" rows="4" style="resize: none;  width: 100%; margin-top: 10px;  border: 1px solid rgb(161, 159, 159);
+            border-radius: 12px;"></textarea>
+        <div>
+        <button type="button" onclick="SubmitData()" style="background-color:green;
+                        border-radius: 12px; 
+                        color: white; 
+                        padding: 18px 36px; 
+                        margin-top: 20px; border: none;
+                        margin-bottom: 4px; 
+                        margin-left: 4px;
+                        ">Submit</button>
+                        </div>
+        <div style="margin-top: 12px; font-weight: 700;"  id="message-bottom"></div>
+    </form>
+    
+</div>
+
+
+
+
+    </body>
+</html>

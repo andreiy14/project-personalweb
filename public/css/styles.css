@@ -1,0 +1,108 @@
+
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid rgb(241, 230, 230);
+}
+
+
+
+nav .left{
+     
+    flex: 50%;
+    padding-left: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+nav .left img{
+    object-fit: contain;
+}
+
+nav .left ul li{
+    display: inline;
+}
+nav .left ul li a{
+    text-decoration: none;
+    padding : 5px 10px;
+   
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+nav .right-nav{
+    
+    flex: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+    align-items: center;
+    padding-right: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.right-nav a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border : 1px solid black;
+    padding : 10px 20px;
+    border-radius: 10px;
+}
+
+.container {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section {
+    display: flex;
+    /* background-color: aqua; */
+    width: 85%
+}
+
+.section .left{
+    flex: 40%;
+}
+
+.section .right {
+    /* background-color: deepskyblue; */
+    flex: 60%;
+    padding-left: 30px;
+    
+}
+
+.section .right p {
+    color: grey
+}
+
+.section .right .skill-container {
+    display: flex;
+}
+
+.section .right .skill-container div {
+    flex: 1;
+}
+
+.skill-container div img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.right a{
+    text-decoration: none;
+    background-color: transparent;
+}
