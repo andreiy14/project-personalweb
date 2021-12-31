@@ -4,7 +4,7 @@ const bcrypt =  require('bcrypt')
 const session = require('express-session')
 const flash = require('express-flash')
 const app = express()
-const PORT = process.env.PORT || 5000
+const port = 5000
 const upload = require('./middleware/uploadFile')
 var isLogin = true
 var month = [ 
@@ -135,7 +135,7 @@ app.get('/logout', function(request,response){
    
 })
 app.get('/add-blog', function(request,response){
-    response.render('add-blog')
+    response.render('add-blog',{author:req.session.author})
 })
 app.get('/blog-detail/:id', function(request,response){
     let id = request.params.id
@@ -147,7 +147,7 @@ app.get('/blog-detail/:id', function(request,response){
             
             console.log(result.rows)
             let dataBlogs = result.rows[0]
-            response.render('blog-detail', {isLogin :isLogin, blogs:dataBlogs})
+            response.render('blog-detail', {isLogin :isLogin, blogs:dataBlogs,author:request.session.author})
         })
     })
     
@@ -168,7 +168,7 @@ app.get('/delete-blog/:index', function(req,res){
 app.get('/edit-blog/:index',function(req,res){
     let index = req.params.index
   
-    res.render('edit-blog',{index:index})
+    res.render('edit-blog',{index:index,author:req.session.author})
 })
 app.post('/edit-blogs',upload.single('image'), function(req,res){
     
@@ -236,8 +236,8 @@ app.post('/blog',upload.single('image'), function(req,res){
     })
 })
 
-app.listen(PORT,function(){
-    console.log(`running on port : ${PORT}`);
+app.listen(port,function(){
+    console.log(`running on port : ${port}`);
 })
 function getFulltime (time){
     let date = time.getDate()

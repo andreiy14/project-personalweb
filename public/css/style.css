@@ -12,8 +12,8 @@
     border: 1px solid black;
 }
 .btn-orange{
-    background-color: orangered;
-    color: white;
+    border: 1px solid black;
+    
 }
 .text-orange{
     color: orangered !important;
