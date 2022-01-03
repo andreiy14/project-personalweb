@@ -4,7 +4,7 @@ const bcrypt =  require('bcrypt')
 const session = require('express-session')
 const flash = require('express-flash')
 const app = express()
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 const upload = require('./middleware/uploadFile')
 var isLogin = true
 var month = [ 
@@ -237,7 +237,7 @@ app.post('/blog',upload.single('image'), function(req,res){
 })
 
 app.listen(port,function(){
-    console.log(`running on port : ${port}`);
+    console.log(`running on port : ${PORT}`);
 })
 function getFulltime (time){
     let date = time.getDate()
