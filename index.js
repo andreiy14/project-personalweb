@@ -4,7 +4,7 @@ const bcrypt =  require('bcrypt')
 const session = require('express-session')
 const flash = require('express-flash')
 const app = express()
-const port = process.env.PORT||5000
+const port = 5000
 const upload = require('./middleware/uploadFile')
 var isLogin = true
 var month = [ 
@@ -135,7 +135,7 @@ app.get('/logout', function(request,response){
    
 })
 app.get('/add-blog', function(request,response){
-    response.render('add-blog',{author:req.session.author})
+    response.render('add-blog',{author:request.session.author})
 })
 app.get('/blog-detail/:id', function(request,response){
     let id = request.params.id
