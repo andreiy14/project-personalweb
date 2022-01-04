@@ -6,7 +6,7 @@ const flash = require('express-flash')
 const app = express()
 const port =  process.env.PORT || 5000
 const upload = require('./middleware/uploadFile')
-const { port } = require('pg/lib/defaults')
+
 var isLogin = true
 var month = [ 
     'January', 
