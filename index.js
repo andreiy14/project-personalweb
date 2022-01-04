@@ -234,7 +234,7 @@ app.post('/blog',upload.single('image'), function(req,res){
     })
 })
 
-app.listen(port,function(){
+app.listen(PORT,function(){
     console.log(`running on port : ${PORT}`);
 })
 function getFulltime (time){
