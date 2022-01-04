@@ -64,7 +64,9 @@ app.get('/', function(request,response){
         console.log(err)
 
         client.query('SELECT * FROM experience',function(err,result){
-            
+            if(result.rows.length == 0){
+               return response.render('index')   
+            }
             console.log(result.rows)
             let dataBlogs = result.rows
             console.log(dataBlogs);
