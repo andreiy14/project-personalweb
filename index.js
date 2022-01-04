@@ -4,7 +4,7 @@ const bcrypt =  require('bcrypt')
 const session = require('express-session')
 const flash = require('express-flash')
 const app = express()
-const port =  process.env.PORT || 5000
+const PORT =  process.env.PORT || 5000
 const upload = require('./middleware/uploadFile')
 
 var isLogin = true
