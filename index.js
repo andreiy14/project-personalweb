@@ -57,7 +57,7 @@ app.use(flash())
 
 
 
-app.get('/', function(request,response){
+app.get('/index', function(request,response){
     db.connect(function(err,client, done){
         if (err) throw err
         console.log(err)
