@@ -1,6 +1,6 @@
 const {Pool} = require('pg')
 const dbPool = new Pool({
-   connectionString : 'postgres://wydgdiwfoygpsi:9d4a3b4c1329c48165d0aeed93cbddd3a0c28500a5f815039eb21b7dae402511@ec2-18-235-235-165.compute-1.amazonaws.com:5432/deu9diao78kehu',
+   connectionString : 'postgres://vtgjwyctzmibzr:c0bc759e488daab6da8a081ede8feb793f41a62f106599df9496b3faed50d475@ec2-18-233-114-179.compute-1.amazonaws.com:5432/d6ln6hnuicl9f9',
    ssl: {rejectUnauthorized:false}
    
 })
